@@ -1,0 +1,286 @@
+
+
+/// VARS
+
+// Timing
+$base-duration: 0.25s;
+$base-timing: ease-in-out;
+
+// Global
+
+* + h2 {
+  margin-top: 0;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  white-space: nowrap;
+  background: $color--blue;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all $base-duration $base-timing;
+  margin: 10px 0;
+
+  &:hover {
+    color: #fff;
+    background: $color--teal;
+  }
+
+}//button
+
+
+// headers
+
+.font--header--granjon h1 {
+  font-family: $font--sans-serif;
+}
+
+#main {
+  
+  p,
+  li,
+  .ucsf-news {
+    line-height: 1.8;
+  }
+
+  // headers
+
+  h2 {
+    padding-top: 20px;
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+
+  .field-name-field-paragraph-sections {
+    
+    > .field-items {
+      
+      > .field-item {
+        margin-top: 0;
+      }
+
+    }//> .field-items
+
+  }//.field-name-field-paragraph-sections
+
+}//#main
+
+
+#page-title {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  
+  @media (min-width: 768px) {
+    padding-right: 200px;
+  }
+
+  @media (min-width: 1008px) {
+    padding-right: 500px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-right: 600px;
+  }
+  
+}
+
+
+// Team Page
+
+
+
+.view-team-list {
+
+  .item-list {
+
+    > ul {
+      margin: 0;
+      padding: 0;
+
+      > li {
+        padding: 0 0 40px;
+        clear: both;
+      }
+
+    }//ul
+
+  }//.item-list
+
+  .field-name-field-headshot {
+    float: left;
+    overflow: hidden;
+    width: 25%;
+
+    img {
+      display: block;
+    }
+
+  }
+
+  .bio-group {
+    float: left;
+    overflow: hidden;
+    width: 75%;
+    padding-left: 4%;
+  }
+
+  .person {
+    overflow: hidden;
+    margin: 0 0 40px;
+    border-bottom: solid 1px #ccc;
+
+    &:last-child {
+      border: 0;
+    }
+
+    &-name {
+      margin-bottom: 0;
+    }
+
+    &-title {
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    &-bio {
+      margin-top: 20px;
+
+      p {
+        font-size: 15px;
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+      }//p
+
+    }//&-bio
+
+  }//.person
+
+}//.view-team-list
+
+// homepage carousel image ratio 748x500
+
+
+// Portfolio (News content type)
+
+// Portfolio Teaser
+.view-display-id-news_page {
+
+  // image aspect ratio 340x290
+  
+  .ucsf-news {
+    line-height: 1.625;
+
+    h3 {
+      font-size: 32px;
+      font-weight: 400;
+      margin-bottom: 14px;
+    }
+
+    .date {
+      display: none;
+    }
+    
+    .ucsf-news-image {
+      
+      a {
+        display: block;
+      }
+      
+      img {
+
+        @media (max-width: 479px) {
+          width: 100%;
+        }
+
+        @media (min-width: 768px) {
+          width: auto;
+        }
+
+      }
+      
+    }//.ucsf-news-image
+    
+  }
+
+}//.view-display-id-news_page
+
+// Portfolio Page
+.node-news {
+  position: relative;
+  
+  .field-name-field-text-byline {
+    position: absolute;
+    right: 0;
+    top: -66px;
+    border-bottom: 0;
+    text-indent: -9999em;
+
+    .share-buttons {
+      text-indent: 0;
+      width: 300px;
+      text-align: right;
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+
+      a {
+        border-bottom: 0;
+        color: $color--blue;
+        transition: all $base-duration $base-timing;
+
+        &:hover {
+          color: $color--teal;
+        }
+
+      }//a
+
+      .fa {
+        font-size: 20px;
+      }
+
+      .st_sharethis_custom {
+        display: none;
+      }
+    }
+
+  }//.field-name-field-text-byline
+
+  .field-name-field-image {
+    padding-bottom: 40px;
+    width: 100%;
+    
+    @media (min-width: 768px) {
+      float: right;
+      padding-left: 40px;
+      width: 50%;
+    }
+
+    img {
+      display: block;
+    }
+
+  }
+
+  .field-name-field-meta-data,
+  .field-name-field-our-involvment {
+    margin-top: 40px;
+  }
+
+}//.node-news
+
+.bg-slider-image {
+  width: 748px;
+  height: 500px;
+}
